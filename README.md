@@ -5,7 +5,7 @@ This simple app builds a basic PHP app running on Heroku and uses Salesforce Ide
 
 Pre-requisites
 --------------
-You'll need an org that has a Community setup and active. Ideally you should have following the Salesforce External Identity Implementation Guide to set up this org or you have completed the [Identity for Customers](https://trailhead.salesforce.com/module/identity_external)
+You'll need an org that has a Community setup and active. Ideally you should have following the Salesforce External Identity Implementation Guide to set up this org or you have completed the [Identity for Customers](https://trailhead.salesforce.com/module/identity_external) Trailhead module.
 
 Steps to deploy
 ---------------
@@ -15,7 +15,7 @@ Steps to deploy
 4. Create a Connected App
 	* Enable OAuth
 	* Select openid scope
-	* Set Callback to https://HEROKUAPP/_callback.php
+	* Set Callback to https://HEROKUAPP_URL/_callback.php
 	* Save
 	* Copy the Consumer Key 
 5. Set the Heroku config vars:
