@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,23 +10,20 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600" type="text/css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
 	
-    <meta name="salesforce-community" content="https://id.fixcoffee.info">
+    <meta name="salesforce-community" content="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>">
     <meta name="salesforce-client-id" content="<?php echo getenv('SALESFORCE_CLIENT_ID');?>">
-    <meta name="salesforce-redirect-uri" content="https://pacific-reef-48377.herokuapp.com/_callback.html">
+    <meta name="salesforce-redirect-uri" content="https://<?php echo getenv('SALESFORCE_HEROKUAPP_URL');?>/_callback.php">
 	<meta name="salesforce-mode" content="modal">
 	<meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-login-handler" content="onLogin">
     <meta name="salesforce-logout-handler" content="onLogout">
-	<link href="https://id.fixcoffee.info/resource/salesforce_login_widget_css" rel="stylesheet" type="text/css" /> 
-    <script src="https://id.fixcoffee.info/resource/salesforce_login_widget_js_min" async defer></script>
-	
-	
-	
+	<link href="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/resource/salesforce_login_widget_css" rel="stylesheet" type="text/css" /> 
+    <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/resource/salesforce_login_widget_js_min" async defer></script>
   </head>
+  
   <body>
-	   <div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
+  	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
     <header>
-
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>
         <div class="element-middle">
@@ -40,7 +36,6 @@
       </div>
     </header>
     <section class="textured-section">
-
       <h1>Curated Coffee Components</h1>
       
 
