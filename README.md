@@ -15,12 +15,13 @@ Steps to deploy
 4. Create a Connected App
 	* Enable OAuth
 	* Select openid scope
-	* Set Callback to https://HEROKUAPP_URL/_callback.php
+	* Set Callback to https://HEROKUAPP_URL/_callback.php e.g. https://strong-castle-20163.herokuapp.com/_callback.php
 	* Save
 	* Copy the Consumer Key 
-5. Set the Heroku config vars:
+5. Set the Heroku config vars via Setting > Reveal Config Vars:
 	* "SALESFORCE_CLIENT_ID" to your Connected App's Consumer key
-	* "SALESFORCE_COMMUNITY_URL" to the Community's domain (no trailing slash) e.g. mycommunity.force.com/community2
-	* "SALESFORCE_HEROKUAPP_URL" to the Heroku app's domain (no trailing slash) e.g. strong-castle-20163.herokuapp.com
+	* "SALESFORCE_COMMUNITY_URL" to the Community's domain, no trailing slash, and no https:// e.g. mycommunity.force.com/community2
+	* "SALESFORCE_HEROKUAPP_URL" to the Heroku app's domain, no trailing slash, and no https:// e.g. strong-castle-20163.herokuapp.com
+6. Open the app and enjoy!
 
 [package]: <https://login.salesforce.com/packaging/installPackage.apexp?p0=04tj0000001iMnR>

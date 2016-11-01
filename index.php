@@ -14,6 +14,7 @@
     <meta name="salesforce-client-id" content="<?php echo getenv('SALESFORCE_CLIENT_ID');?>">
     <meta name="salesforce-redirect-uri" content="https://<?php echo getenv('SALESFORCE_HEROKUAPP_URL');?>/_callback.php">
 	<meta name="salesforce-mode" content="modal">
+	<meta name="salesforce-namespace" content="">
 	<meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-login-handler" content="onLogin">
     <meta name="salesforce-logout-handler" content="onLogout">
@@ -187,6 +188,13 @@
 		
 		var content = document.createElement('div'); 
 	 	content.id = "sfid-content";
+
+		var community = document.createElement('a');
+		var commURL = document.querySelector('meta[name="salesforce-community"]').content;
+		community.href = commURL;
+		community.innerHTML = "Go to the Community";
+		community.setAttribute("style", "float:left");
+		content.appendChild(community);
 
 
 		var logout = document.createElement('a'); 
