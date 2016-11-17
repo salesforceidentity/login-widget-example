@@ -14,7 +14,7 @@
     <meta name="salesforce-client-id" content="<?php echo getenv('SALESFORCE_CLIENT_ID');?>">
     <meta name="salesforce-redirect-uri" content="https://<?php echo getenv('SALESFORCE_HEROKUAPP_URL');?>/_callback.php">
 	<meta name="salesforce-mode" content="modal">
-	<meta name="salesforce-namespace" content="">
+	<meta name="salesforce-namespace" content="<?php echo getenv('SALESFORCE_NAMESPACE');?>">
 	<meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-login-handler" content="onLogin">
     <meta name="salesforce-logout-handler" content="onLogout">

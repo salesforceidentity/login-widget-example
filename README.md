@@ -9,7 +9,7 @@ You'll need an org that has a Community setup and active. Ideally you should hav
 
 Steps to deploy
 ---------------
-1. Deploy [package] this package to your org. The package is an Apex classes needed by the Login Widget
+1. Deploy this [package] to your org. The package is an Apex classes needed by the Login Widget
 2. Go to the force.com site that underlies your Community.
 	* Click on public access settings and add 'SalesforceLoginWidgetXAuthServer' as an allowed Apex Class. [Read this for more information on how to do this](https://developer.salesforce.com/blogs/developer-relations/2012/02/quick-tip-public-restful-web-services-on-force-com-sites.html)
 	* Make the 'loginservice' and 'loginpage' VisualForce Pages publically accessible as well.
@@ -22,8 +22,9 @@ Steps to deploy
 	* Copy the Consumer Key 
 5. Set the Heroku config vars via Setting > Reveal Config Vars:
 	* "SALESFORCE_CLIENT_ID" to your Connected App's Consumer key
-	* "SALESFORCE_COMMUNITY_URL" to the Community's domain, no trailing slash, and no https:// e.g. mycommunity.force.com/community2
-	* "SALESFORCE_HEROKUAPP_URL" to the Heroku app's domain, no trailing slash, and no https:// e.g. strong-castle-20163.herokuapp.com
+	* "SALESFORCE_COMMUNITY_URL" to the Community's domain, no trailing slash, and _no_ https:// For example: mycommunity.force.com/community2
+	* "SALESFORCE_HEROKUAPP_URL" to the Heroku app's domain, no trailing slash, and _no_ https:// For example: strong-castle-20163.herokuapp.com
+	* If you installed the package in a Salesforce Org with a namespace set, you must set the "SALESFORCE_NAMESPACE" config variable
 6. Open the app and enjoy!
 
 [package]: <https://login.salesforce.com/packaging/installPackage.apexp?p0=04tj0000001iMnR>
