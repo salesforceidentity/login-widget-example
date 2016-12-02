@@ -16,6 +16,7 @@
 	<meta name="salesforce-mode" content="modal">
 	<meta name="salesforce-namespace" content="<?php echo getenv('SALESFORCE_NAMESPACE');?>">
 	<meta name="salesforce-target" content="#sign-in-link">
+	<meta name="salesforce-save-access-token" content="true">
     <meta name="salesforce-login-handler" content="onLogin">
     <meta name="salesforce-logout-handler" content="onLogout">
 	<link href="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/resource/salesforce_login_widget_css" rel="stylesheet" type="text/css" /> 
