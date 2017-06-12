@@ -6,9 +6,11 @@
   "logo": "https://www.salesforceidentity.info/img/launcher.png",
   "keywords": ["salesforce", "heroku", "identity", "loginwidget"],
   "env":{
-	  "SALESFORCE_CLIENT_ID":"CONNECTED_APP_KEY_HERE",
 	  "SALESFORCE_COMMUNITY_URL":"COMMUNITY_URL_HERE",
+	  "SALESFORCE_CLIENT_ID":"CONNECTED_APP_KEY_HERE",
 	  "SALESFORCE_HEROKUAPP_URL":"HEROKUAPP_URL_HERE",
-	  "SALESFORCE_NAMESPACE": ""
+	  "SALESFORCE_MODE":"RENDER_MODE_HERE",
+	  "SALESFORCE_FORGOT_PASSWORD_ENABLED":"true",
+	  "SALESFORCE_SELF_REGISTER_ENABLED":"false",
 	  }
 }
