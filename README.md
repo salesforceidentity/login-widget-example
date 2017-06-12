@@ -21,10 +21,12 @@ Steps to deploy
 	* Save
 	* Copy the Consumer Key 
 5. Set the Heroku config vars via Setting > Reveal Config Vars:
+	* "SALESFORCE_COMMUNITY_URL" to the Community's domain, no trailing slash, For example: https://mycommunity.force.com/community2
 	* "SALESFORCE_CLIENT_ID" to your Connected App's Consumer key
-	* "SALESFORCE_COMMUNITY_URL" to the Community's domain, no trailing slash, and _no_ https:// For example: mycommunity.force.com/community2
-	* "SALESFORCE_HEROKUAPP_URL" to the Heroku app's domain, no trailing slash, and _no_ https:// For example: strong-castle-20163.herokuapp.com
-	* If you installed the package in a Salesforce Org with a namespace set, you must set the "SALESFORCE_NAMESPACE" config variable
+	* "SALESFORCE_MODE" to either "modal" or "inline" to control how the login box is rendered
+	* "SALESFORCE_FORGOT_PASSWORD_ENABLED" to either "true" or "false" depending if you want to display the forgot password link
+	* "SALESFORCE_SELF_REGISTER_ENABLED" to either "true" or "false" depending if you want to display the user registration link	
 6. Open the app and enjoy!
 
 [package]: <https://login.salesforce.com/packaging/installPackage.apexp?p0=04tj0000001iMnR>
+
