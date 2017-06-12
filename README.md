@@ -16,7 +16,8 @@ Steps to deploy
 	* Select openid scope
 	* Set Callback to https://HEROKUAPP_URL/_callback.php e.g. https://strong-castle-20163.herokuapp.com/_callback.php
 	* Save
-	* Copy the Consumer Key 
+	* Copy the Consumer Key
+	* You will also want to Manage the Connected App and change the Permitted Users policy from User to Admin Approved. Then you will want to a Profile or Permission Set for the user you want to test.
 4. Set the Heroku config vars via Setting > Reveal Config Vars:
 	* "SALESFORCE_COMMUNITY_URL" to the Community's domain, no trailing slash, For example: https://mycommunity.force.com/community2
 	* "SALESFORCE_CLIENT_ID" to your Connected App's Consumer key
