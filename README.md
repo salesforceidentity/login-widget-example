@@ -29,4 +29,3 @@ Steps to deploy
 6. Open the app and enjoy!
 
 [package]: <https://login.salesforce.com/packaging/installPackage.apexp?p0=04tj0000001iMnR>
-
